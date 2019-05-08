@@ -1,3 +1,7 @@
+/*------------- COLORS ------------- */
+
+/* #419cf7 blue
+
 /*------------- BASIC SETUP  ------------- */
 
 * {
@@ -17,10 +21,73 @@ html {
 
 body {
     width: 1272px;
+    margin: auto;
 }
 
 /*------------- HEADINGS ------------- */
 
-h2, h3 {
+h1,h2, h3 {
     color: #1d5a80;
+    margin: 0;
+}
+
+/*------------- REUSABLE ------------- */
+
+section {
+    padding-bottom: 125px;
+}
+
+/*------------- HEADER ------------- */
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+header nav h1 {
+    background: url("img/logo.png") no-repeat;
+    width: 71px;
+    height: 68px;
+    /*margin-top: 25px;*/
+}
+
+header nav h1 span {
+    visibility: hidden;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 35px;
+}
+
+header nav ul li a:hover {
+    color: #419cf7;
+}
+
+header nav ul li:last-child a {
+    border: 1px #666 solid;
+    width: 165px;
+    height: 43px;
+    text-align: center;
+    line-height: 43px;
+}
+
+header nav ul li:last-child a:hover {
+    color: #fff;
+    border: 1px #419cf7 solid;
+    background-color: #419cf7;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #666;
+    display: block;
 }
