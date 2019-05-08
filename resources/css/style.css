@@ -1,0 +1,26 @@
+/*------------- BASIC SETUP  ------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #1d1d1d;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    width: 1272px;
+}
+
+/*------------- HEADINGS ------------- */
+
+h2, h3 {
+    color: #1d5a80;
+}
