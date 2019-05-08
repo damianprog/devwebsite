@@ -39,6 +39,10 @@ section {
 
 /*------------- HEADER ------------- */
 
+header nav{
+    padding-bottom: 170px;
+}
+
 header nav {
     display: flex;
     align-items: center;
@@ -50,7 +54,6 @@ header nav h1 {
     background: url("img/logo.png") no-repeat;
     width: 71px;
     height: 68px;
-    /*margin-top: 25px;*/
 }
 
 header nav h1 span {
@@ -91,3 +94,8 @@ header nav ul li a {
     color: #666;
     display: block;
 }
+
+.main-text-box {
+    font-size: 405%;
+}
+
