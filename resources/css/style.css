@@ -1,6 +1,7 @@
 /*------------- COLORS ------------- */
 
-/* #419cf7 blue
+/* #419cf7 light blue
+/* #1d5a80 dark blue
 
 /*------------- BASIC SETUP  ------------- */
 
@@ -10,7 +11,9 @@
     box-sizing: border-box;
 }
 
-html {
+body {
+    width: 95%;
+    margin: auto;
     background-color: #fff;
     color: #1d1d1d;
     font-family: 'Open Sans', sans-serif;
@@ -19,16 +22,16 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-body {
-    width: 1272px;
-    margin: auto;
-}
-
 /*------------- HEADINGS ------------- */
 
 h1,h2, h3 {
     color: #1d5a80;
+    font-weight: lighter;
     margin: 0;
+}
+
+h2 {
+    font-size: 405%;
 }
 
 /*------------- REUSABLE ------------- */
@@ -95,7 +98,30 @@ header nav ul li a {
     display: block;
 }
 
-.main-text-box {
-    font-size: 405%;
+header h2 {
+    padding-bottom: 125px;
 }
 
+header h2 span {
+    color: #419cf7;
+}
+
+header p {
+    font-size: 115%;
+    padding-bottom: 33px;
+}
+
+.companies-links {
+    font-size: 188%;
+    max-width: 907px;
+    font-style: italic;
+    color: #1d5a80;
+}
+
+.companies-links a {
+    text-decoration: none;
+    color: #1d5a80;
+    font-weight: 400;
+    border-bottom: 2px solid #419cf7;
+    line-height: 40px;
+}
