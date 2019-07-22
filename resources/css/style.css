@@ -43,6 +43,10 @@ section {
 
 /*------------- HEADER ------------- */
 
+header {
+    padding-bottom: 60px;
+}
+
 header nav{
     padding-bottom: 170px;
 }
@@ -127,7 +131,7 @@ header p {
     line-height: 40px;
 }
 
-/*------------- HEADER ------------- */
+/*------------- GALLERY ------------- */
 
 .companies-photos {
     display: grid;
@@ -135,47 +139,69 @@ header p {
     grid-gap: 13px;
 }
 
-.companies-photos img {
+.companies-photos .box-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+    transform: scale(1.0);
+    opacity: 0.8;
+    transition: transform 0.3s,opacity 0.3s;
 }
 
-.col-1-1 {
+.companies-photos [class*='col']:hover .box-img {
+    transform: scale(1.1);
+    opacity: 0.65;
+}
+
+.companies-photos .col-1-1 .logo-container img {
+    width:64%;
+}
+
+.companies-photos .col-2-1 .logo-container img {
+    width: 80%;
+}
+
+.companies-photos .col-3-1 .logo-container img {
+    width: 80%;
+}
+
+.companies-photos .col-2-2 .logo-container img {
+    width: 54%;
+}
+
+.companies-photos [class*='col'] {
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+
+.companies-photos [class*='col'] .logo-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.companies-photos .col-1-1 {
     grid-column: 1/2;
     grid-row: 1/3;
 }
 
-.col-2-1 {
+.companies-photos .col-2-1 {
     grid-column: 2/3;
     grid-row: 1/2;
 }
 
-.col-3-1 {
+.companies-photos .col-3-1 {
     grid-column: 3/4;
     grid-row: 1/2;
 }
 
-.col-2-2 {
+.companies-photos .col-2-2 {
     grid-column: 2/4;
     grid-row: 2/3;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
