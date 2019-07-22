@@ -35,10 +35,23 @@ h2 {
     font-size: 405%;
 }
 
+h3 {
+    font-size: 360%;
+}
+
 /*------------- REUSABLE ------------- */
 
 section {
     padding-bottom: 125px;
+}
+
+.specification {
+    font-size: 117%;
+    line-height: 35px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*------------- HEADER ------------- */
@@ -96,7 +109,6 @@ header nav ul li:last-child a:hover {
 }
 
 header nav ul li a {
-    text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
     color: #666;
@@ -107,7 +119,8 @@ header h2 {
     padding-bottom: 125px;
 }
 
-header h2 span {
+header h2 span,
+.description p a {
     color: #419cf7;
 }
 
@@ -124,7 +137,6 @@ header p {
 }
 
 .companies-links a {
-    text-decoration: none;
     color: #1d5a80;
     font-weight: 400;
     border-bottom: 2px solid #419cf7;
@@ -204,4 +216,33 @@ header p {
 .companies-photos .col-2-2 {
     grid-column: 2/4;
     grid-row: 2/3;
+}
+
+/*------------- DESCRIPTION ------------- */
+
+.description {
+    display: flex;
+}
+
+.description h3 {
+    padding-bottom: 40px;
+}
+
+.description div:first-child {
+    flex: 0 0 65%;
+}
+
+.description-links-container {
+    padding-top: 53px;
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.description div:last-child a {
+    display: block;
+    color: #1d5a80;
+    font-weight: 400;
+    font-size: 200%;
+    line-height: 40px;
 }
