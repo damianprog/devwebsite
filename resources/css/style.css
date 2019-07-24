@@ -25,7 +25,7 @@ body {
 
 /*------------- HEADINGS ------------- */
 
-h1,h2, h3 {
+h1, h2, h3 {
     color: #1d5a80;
     font-weight: lighter;
     margin: 0;
@@ -60,7 +60,7 @@ header {
     padding-bottom: 60px;
 }
 
-header nav{
+header nav {
     padding-bottom: 170px;
 }
 
@@ -158,7 +158,7 @@ header p {
     display: block;
     transform: scale(1.0);
     opacity: 0.8;
-    transition: transform 0.3s,opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
 .companies-photos [class*='col']:hover .box-img {
@@ -167,7 +167,7 @@ header p {
 }
 
 .companies-photos .col-1-1 .logo-container img {
-    width:64%;
+    width: 64%;
 }
 
 .companies-photos .col-2-1 .logo-container img {
@@ -246,3 +246,75 @@ header p {
     font-size: 200%;
     line-height: 40px;
 }
+
+/*------------- SLIDE SHOW ------------- */
+
+.hq-slides {
+    opacity: 0;
+    transition: opacity .5s ease-in;
+    position: absolute;
+}
+
+.slideshow {
+    height: 500px;
+    box-sizing: content-box;
+}
+
+.slideshow-container {
+    position: relative;
+}
+
+.hq-slides {
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+    height: 500px;
+}
+
+.offices-descriptions {
+    width:500px;
+    box-sizing: content-box;
+    padding: 0 74px 0 74px;
+}
+
+.offices-descriptions .map-image {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.hq-slides p {
+    text-align: center;
+}
+
+.hq-slides p img {
+    width: 16px;
+}
+
+.hq-slides .hq-description {
+    font-size: 260%;
+}
+
+.hq-slides .hq-office {
+    font-size: 100%;
+    margin-top: 48px;
+}
+
+.bricks-slide {
+    background-image:linear-gradient(to left,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("img/bricks-slide.jpg");
+}
+
+.mill-slide {
+    background-image:linear-gradient(to left,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("img/mill-slide.jpg");
+}
+
+
+
+
+
+
+
+
+
+
+
+
