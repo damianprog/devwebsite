@@ -308,8 +308,9 @@ header p {
 }
 
 @media (max-width: 945px) {
+
     .companies-photos {
-        grid-template-rows: 20% 25% 20%;
+        grid-template-rows: 0.4fr 0.5fr 0.4fr;
     }
 
     .companies-photos .col-1-1 {
