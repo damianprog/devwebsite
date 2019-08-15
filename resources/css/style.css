@@ -12,15 +12,18 @@
 }
 
 body {
-    width: 95%;
-    max-width: 1400px;
-    margin: auto;
     background-color: #fff;
     color: #1d1d1d;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 16px;
     text-rendering: optimizeLegibility;
+}
+
+.main-wrapper {
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
 }
 
 /*------------- HEADINGS ------------- */
@@ -305,6 +308,91 @@ header p {
 
 .mill-slide {
     background-image:linear-gradient(to left,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("img/mill-slide.jpg");
+}
+
+/*------------- LOGOS QUOTE ------------- */
+
+.logos-quote {
+    display: flex;
+}
+
+.logos {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.logos, .quote {
+    width: 50%;
+}
+
+.logos div {
+    width:50%;
+    text-align: center;
+    padding: 3%;
+}
+
+.quote {
+    font-size: 209%;
+    line-height: 44px;
+}
+
+.quote p {
+    font-size: 60%;
+    padding-top: 30px;
+}
+
+.quote span {
+    color: #419cf7;
+    font-weight: 600;
+}
+
+/*------------- OFFICE GALLERY ------------- */
+
+.office-gallery img {
+    width: 100%;
+}
+
+/*------------- HIRE INFO ------------- */
+
+.hire-info-section h3,.hire-info-section p {
+    text-align: center;
+}
+
+.hire-info-section h3 {
+    padding-bottom: 50px;
+}
+
+.hire-info-section p {
+    font-size: 150%;
+    line-height: 44px;
+}
+
+.hire-info-section div {
+    margin: auto;
+    max-width: 1120px;
+}
+
+/*------------- TALK INFO ------------- */
+
+.talk-info {
+    background-color: #f3f5f9;
+    padding: 60px 0;
+}
+
+.talk-content {
+    max-width:1400px;
+    margin: auto;
+}
+
+.talk-content p {
+    font-size: 133%;
+    padding-bottom: 8px;
+}
+
+.talk-content h1 {
+    font-size: 300%;
+    font-weight: 600;
+    color: #000;
 }
 
 @media (max-width: 945px) {
