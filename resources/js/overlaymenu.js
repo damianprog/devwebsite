@@ -13,7 +13,7 @@ function setMediaElements() {
     }
 }
 
-function openNav() {
+function switchMenu() {
     if (overlay.clientWidth === 0) {
         overlay.style.width = "100%";
         hamburger.style.display = "none";
